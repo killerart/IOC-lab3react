@@ -36,7 +36,7 @@ function App() {
   ) {
     const averages = reactions.map(average);
     const standartDeviations = reactions.map(standartDeviation);
-    console.log(standartDeviations);
+
     const insideStandartDeviations = reactions.map(
       (test, i) => test.filter((x) => x <= standartDeviations[i]).length
     );
